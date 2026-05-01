@@ -4,7 +4,11 @@ const cors = require('cors');
 const mysql = require('mysql2/promise');
 
 const app = express();
-app.use(cors()); 
+app.use(cors({
+  origin: "https://enchanting-reverence-production-cfa5.up.railway.app/", // Put your frontend link here
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json()); 
 
 const DB_URL = "mysql://root:dnDQbXhTCyTjMaAqIlGfoazUrDMojVwK@switchyard.proxy.rlwy.net:59462/railway";
