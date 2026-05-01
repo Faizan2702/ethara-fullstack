@@ -5,7 +5,7 @@ const mysql = require('mysql2/promise');
 
 const app = express();
 app.use(cors({
-  origin: "https://enchanting-reverence-production-cfa5.up.railway.app/",
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
