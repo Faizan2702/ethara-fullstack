@@ -1,11 +1,6 @@
 import axios from 'axios';
 
-// MAKE SURE THIS IS CORRECT: 
-// If testing on your computer: 'http://localhost:5000/api'
-// If deployed to Railway: 'https://your-railway-app-url.app/api'
-const API_URL = 'http://localhost:5000/api'; 
-
-// We are adding an error catcher to tell you exactly why it's failing
+const API_URL = 'ethara-fullstack-production.up.railway.app'; 
 const handleApiError = (error) => {
   console.error("API Error Details:", error);
   if (error.message === "Network Error") {
