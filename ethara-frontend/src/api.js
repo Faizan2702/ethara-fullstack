@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://ethara-fullstack-production.up.railway.app/api'; 
+const API_URL = "https://ethara-fullstack-production.up.railway.app/api";
 const handleApiError = (error) => {
   console.error("API Error Details:", error);
   if (error.message === "Network Error") {
